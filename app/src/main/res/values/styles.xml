@@ -1,0 +1,17 @@
+<resources>
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light">
+        <!-- Adicione essa linha para habilitar o uso do atributo app:tint -->
+        <item name="android:imageButtonStyle">@style/AppTheme.ImageButton</item>
+    </style>
+
+    <style name="AppTheme.ImageButton" parent="Widget.AppCompat.ImageButton">
+        <!-- Define a cor de tint para os ImageViews -->
+        <item name="android:tint">@android:color/white</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/ColorAccent</item>
+    </style>
+</resources>
