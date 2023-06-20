@@ -165,7 +165,11 @@ public class PlayerActivity extends AppCompatActivity implements MediaPlayer.OnC
             mediaPlayer.release();
         }
 
-        position = (position + 1) % listSongs.size();
+        if (isShuffle) {
+            position = getRandomPosition();
+        } else {
+            position = (position + 1) % listSongs.size();
+        }
 
         uri = Uri.parse(listSongs.get(position).getPath());
         mediaPlayer = MediaPlayer.create(getApplicationContext(), uri);
@@ -181,6 +185,8 @@ public class PlayerActivity extends AppCompatActivity implements MediaPlayer.OnC
             }
         });
     }
+
+
 
 
     private void playPauseBtnClicked() {
