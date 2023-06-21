@@ -54,8 +54,12 @@ public class PlayerActivity extends AppCompatActivity implements MediaPlayer.OnC
         setSeekBarListener();
         startSeekBarUpdate();
 
-        //mediaPlayer = MediaPlayer.create(getApplicationContext(), uri);
-
+      backBtnImageView.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View v) {
+              finish();
+          }
+      });
     }
 
     @Override
@@ -235,6 +239,10 @@ public class PlayerActivity extends AppCompatActivity implements MediaPlayer.OnC
                     int mCurrentPosition = mediaPlayer.getCurrentPosition() / 1000;
                     seekBar.setProgress(mCurrentPosition);
                     durationPlayedTextView.setText(formattedTime(mCurrentPosition));
+
+                    int totalDuration = mediaPlayer.getDuration() / 1000;
+                    durationTotalTextView.setText(formattedTime(totalDuration));
+
                 }
                 handler.postDelayed(this, 1000);
             }
