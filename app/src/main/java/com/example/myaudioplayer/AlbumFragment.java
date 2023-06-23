@@ -21,4 +21,6 @@ public class AlbumFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_album, container, false);
         return view;
     }
+
+    //a mudar
 }
