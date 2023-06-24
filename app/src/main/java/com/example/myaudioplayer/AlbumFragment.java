@@ -12,6 +12,7 @@ import androidx.fragment.app.Fragment;
 public class AlbumFragment extends Fragment {
 
     public AlbumFragment() {
+        //construtor vazio
 
     }
 
@@ -22,5 +23,5 @@ public class AlbumFragment extends Fragment {
         return view;
     }
 
-    //a mudar
+
 }
