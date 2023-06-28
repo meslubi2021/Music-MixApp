@@ -31,7 +31,7 @@ import java.util.Random;
 public class PlayerActivity extends AppCompatActivity implements MediaPlayer.OnCompletionListener {
 
     TextView songNameTextView, artistNameTextView, durationPlayedTextView, durationTotalTextView;
-    ImageView coverArtImageView, nextBtnImageView, prevBtnImageView, backBtnImageView, shuffleBtnImageView, repeatBtnImageView;
+    ImageView coverArtImageView, nextBtnImageView, prevBtnImageView, backBtnImageView, shuffleBtnImageView, repeatBtnImageView, menuMoreImageView;
     FloatingActionButton playPauseBtn;
     SeekBar seekBar;
     int position = -1;
@@ -105,7 +105,9 @@ public class PlayerActivity extends AppCompatActivity implements MediaPlayer.OnC
         });
 
 
+
     }
+
 
     private void repeatBtnClicked() {
         isRepeatAll = !isRepeatAll;
@@ -301,6 +303,8 @@ public class PlayerActivity extends AppCompatActivity implements MediaPlayer.OnC
         playPauseBtn = findViewById(R.id.play_pause);
         seekBar = findViewById(R.id.seekBar);
         shuffleBtnImageView = findViewById(R.id.id_shuffle);
+        menuMoreImageView = findViewById(R.id.menuMore);
+
         isShuffle = false;
         shuffleBtnImageView.setBackgroundColor(Color.TRANSPARENT);
     }

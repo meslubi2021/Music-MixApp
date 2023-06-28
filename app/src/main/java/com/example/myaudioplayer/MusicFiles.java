@@ -10,13 +10,20 @@ public class MusicFiles {
 
     private String duration;
 
+   // private String id;
+
     public MusicFiles(String path, String title, String artist, String album, String duration) {
         this.path = path;
         this.title = title;
         this.artist = artist;
         this.album = album;
         this.duration = duration;
+       // this.id = id;
     }
+
+
+
+
 
     public String getPath() {
         return path;
