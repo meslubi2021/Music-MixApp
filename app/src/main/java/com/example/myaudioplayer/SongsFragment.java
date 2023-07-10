@@ -19,7 +19,6 @@ public class SongsFragment extends Fragment {
     MusicAdapter musicAdapter;
 
     public SongsFragment() {
-        // Construtor vazio
     }
 
     @Nullable

@@ -52,6 +52,7 @@ public class MusicAdapter extends RecyclerView.Adapter<MusicAdapter.MyViewHolder
             Glide.with(mContext)
                     .asBitmap()
                     .load(image)
+                    .centerCrop()
                     .into(holder.albumArt);
         } else {
             Glide.with(mContext)

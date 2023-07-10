@@ -16,7 +16,7 @@
         app:tabIndicatorGravity="center"
         app:tabTextColor="@color/ColorAccent"
         app:tabIndicatorHeight="40dp"
-        app:tabIndicatorColor="#009688"
+        app:tabIndicatorColor="#0B1E55"
         app:tabIndicator="@drawable/tab_indicator"
         />
 
