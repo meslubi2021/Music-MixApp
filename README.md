@@ -1,3 +1,3 @@
 # app-music
-app de musica offline desenvolvido em java no android studio
+app de musica offline em desenvolvimento no java no android studio
 
